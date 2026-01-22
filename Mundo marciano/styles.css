@@ -1,0 +1,262 @@
+:root {
+  --morado: #4B1E78;
+  --verde: #A6CE39;
+  --blanco: #FFFFFF;
+  --gris-claro: #F4F4F6;
+  --gris-texto: #6B7280;
+  --negro: #1F1F1F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--blanco);
+  color: var(--negro);
+}
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--morado), #3a155f);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.logo {
+width: clamp(200px, 35vw, 280px);
+height: clamp(200px, 35vw, 280px);
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: white;
+
+  padding: 14px;
+  margin-bottom: 2rem;
+
+  box-shadow: 0 14
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: var(--verde);
+  color: var(--negro);
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section.light {
+  background-color: var(--gris-claro);
+}
+
+.section h2 {
+  color: var(--morado);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  min-width: 200px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.sabores {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sabores li {
+  background-color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+.section p {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  color: var(--gris-texto);
+}
+
+.footer {
+  background-color: var(--morado);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background-color: var(--verde);
+  color: var(--negro);
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
+  box-shadow: 0 8px 0 rgba(0,0,0,0.15);
+  display: inline-block;
+}
+
+/* Al pasar el cursor */
+.btn-primary:hover {
+  transform: translateY(3px);
+  box-shadow: 0 4px 0 rgba(0,0,0,0.15);
+  background-color: #9bc92f; /* verde un pelín más oscuro */
+}
+
+/* Al hacer click */
+.btn-primary:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 0 rgba(0,0,0,0.2);
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  min-width: 200px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 30px rgba(0,0,0,0.08);
+}
+
+.sabores li {
+  background-color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.sabores li:hover {
+  transform: scale(1.05);
+  background-color: var(--gris-claro);
+}
+
+.btn-primary {
+  background-color: var(--verde);
+  color: var(--negro);
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+
+  /* interacción */
+  cursor: pointer;
+  transition: 
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
+  box-shadow: 0 8px 0 rgba(0,0,0,0.15);
+}
+
+/* hover */
+.btn-primary:hover {
+  transform: translateY(3px);
+  box-shadow: 0 4px 0 rgba(0,0,0,0.15);
+  background-color: #9bc92f;
+}
+
+/* click */
+.btn-primary:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 0 rgba(0,0,0,0.2);
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  min-width: 200px;
+  text-align: center;
+  font-weight: 600;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 30px rgba(0,0,0,0.08);
+}
+
+.sabores li {
+  background-color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+
+  cursor: pointer;
+}
+
+.sabores li:hover {
+  transform: scale(1.05);
+  background-color: var(--gris-claro);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.social-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
